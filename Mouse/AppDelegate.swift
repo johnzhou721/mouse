@@ -10,8 +10,6 @@ import Cocoa
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    
-
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -25,6 +23,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
-
+    @IBAction func fourholes(_ sender: Any?)
+    {
+        if let mainWindow = NSApplication.shared.mainWindow
+        {
+            if let VC = (mainWindow.contentViewController) as? SelectVC
+            {
+                VC.Hole4!.performClick(nil)
+            }
+        }
+    }
+    @IBAction func fiveholes(_ sender: Any?)
+    {
+        if let mainWindow = NSApplication.shared.mainWindow
+        {
+            if let VC = (mainWindow.contentViewController) as? SelectVC
+            {
+                VC.Hole5!.performClick(nil)
+            }
+        }
+    }
 }
 

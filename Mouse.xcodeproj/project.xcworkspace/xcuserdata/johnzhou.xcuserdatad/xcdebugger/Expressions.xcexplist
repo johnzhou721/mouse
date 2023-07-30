@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "gameVC.pressedButton(_:):GameVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gamenum">
+            </PersistentString>
+            <PersistentString
+               value = "sequence[currentNum % sequence.count]">
+            </PersistentString>
+            <PersistentString
+               value = "gameNum">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "gameVC.resetGame():GameVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gameNum">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
