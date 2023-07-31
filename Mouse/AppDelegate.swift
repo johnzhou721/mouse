@@ -25,7 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func fourholes(_ sender: Any?)
     {
-        if let mainWindow = NSApplication.shared.mainWindow
+        if let mainWindow = NSApplication.shared.windows.first(where: { $0.isMainWindow })
         {
             if let VC = (mainWindow.contentViewController) as? SelectVC
             {
@@ -35,11 +35,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     @IBAction func fiveholes(_ sender: Any?)
     {
-        if let mainWindow = NSApplication.shared.mainWindow
+        if let mainWindow = NSApplication.shared.windows.first(where: { $0.isMainWindow })
         {
             if let VC = (mainWindow.contentViewController) as? SelectVC
             {
                 VC.Hole5!.performClick(nil)
+            }
+        }
+    }
+    @IBAction func sixholes(_ sender: Any?)
+    {
+        if let mainWindow = NSApplication.shared.windows.first(where: { $0.isMainWindow })
+        {
+            if let VC = (mainWindow.contentViewController) as? SelectVC
+            {
+                VC.Hole6!.performClick(nil)
             }
         }
     }

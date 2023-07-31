@@ -47,7 +47,7 @@ class GameVC5 : gameVC {
         self.pressedButton(sender!)
     }
 }
-class gameVC6 : gameVC {
+class GameVC6 : gameVC {
     @IBOutlet var Button1: NSButton?
     @IBOutlet var Button2: NSButton?
     @IBOutlet var Button3: NSButton?
@@ -65,7 +65,7 @@ class gameVC6 : gameVC {
         buttons.append(Button6!)
         super.viewDidLoad()
     }
-    @IBAction func buttonHandler(_ sender: NSButton?)
+    @IBAction func ButtonHandler(_ sender: NSButton?)
     {
         self.pressedButton(sender!)
     }

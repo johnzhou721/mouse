@@ -10,4 +10,5 @@ import Cocoa
 class SelectVC: NSViewController {
     @IBOutlet public var Hole4 : NSButton!
     @IBOutlet public var Hole5 : NSButton!
+    @IBOutlet public var Hole6 : NSButton!
 }
