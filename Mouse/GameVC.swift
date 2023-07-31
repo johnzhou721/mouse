@@ -51,6 +51,7 @@ class gameVC : NSViewController {
         var input = 0
         for button in buttons
         {
+            if button == nil {continue}
             counter += 1
             if sender == button
             {
@@ -76,11 +77,12 @@ class gameVC : NSViewController {
             buttons[Num as! Int]?.image = NSImage(named: "Number\(Num!)")
             q.dequeue()
         }
-        if currentNum == 5 * sequence.count - 1
+        currentNum += 1
+        if currentNum == 5 * sequence.count
         {
             resetGame()
         }
-        currentNum += 1
+//        print("\(score)\n")
     }
 }
 

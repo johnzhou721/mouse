@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EE16DC0A2A76DD5D0056468D /* ObjcQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16DC082A76DD5D0056468D /* ObjcQueue.m */; };
 		EE68F09D2A76E189005442D8 /* gameVCin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE68F09C2A76E189005442D8 /* gameVCin.swift */; };
-		EE6A6BEB2A756217005E431D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6BEA2A756217005E431D /* AppDelegate.swift */; };
+		EE6A6BEB2A756217005E431D /* MouseAppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A6BEA2A756217005E431D /* MouseAppMain.swift */; };
 		EE6A6BEF2A756218005E431D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6A6BEE2A756218005E431D /* Assets.xcassets */; };
 		EE6A6BF22A756218005E431D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6A6BF02A756218005E431D /* Main.storyboard */; };
 		EEA2F8EB2A760868007FF5B8 /* showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2F8EA2A760868007FF5B8 /* showAlert.swift */; };
@@ -36,7 +36,7 @@
 		EE16DC092A76DD5D0056468D /* ObjcQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcQueue.h; sourceTree = "<group>"; };
 		EE68F09C2A76E189005442D8 /* gameVCin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameVCin.swift; sourceTree = "<group>"; };
 		EE6A6BE72A756217005E431D /* Mouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE6A6BEA2A756217005E431D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE6A6BEA2A756217005E431D /* MouseAppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseAppMain.swift; sourceTree = "<group>"; };
 		EE6A6BEE2A756218005E431D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE6A6BF12A756218005E431D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE6A6BF32A756218005E431D /* Mouse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mouse.entitlements; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				EE16DC092A76DD5D0056468D /* ObjcQueue.h */,
 				EE6A6BEE2A756218005E431D /* Assets.xcassets */,
 				EE6A6BF02A756218005E431D /* Main.storyboard */,
-				EE6A6BEA2A756217005E431D /* AppDelegate.swift */,
+				EE6A6BEA2A756217005E431D /* MouseAppMain.swift */,
 				EED4573F2A756A6500AE5581 /* gameVC.swift */,
 				EEBA03CF2A76F29600A0D98D /* SelectVC.swift */,
 				EEA2F8EA2A760868007FF5B8 /* showAlert.swift */,
@@ -167,7 +167,7 @@
 				EEA2F8EB2A760868007FF5B8 /* showAlert.swift in Sources */,
 				EE68F09D2A76E189005442D8 /* gameVCin.swift in Sources */,
 				EEBA03D02A76F29600A0D98D /* SelectVC.swift in Sources */,
-				EE6A6BEB2A756217005E431D /* AppDelegate.swift in Sources */,
+				EE6A6BEB2A756217005E431D /* MouseAppMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

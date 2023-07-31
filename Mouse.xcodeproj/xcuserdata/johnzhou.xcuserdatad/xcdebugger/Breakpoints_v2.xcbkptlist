@@ -20,5 +20,133 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "686762A0-00EB-4274-B2F0-BE2524928F44"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mouse/gameVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "resetGame()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59713029-6BAC-4AF6-8656-4C7A33E13FED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mouse/gameVCin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "ButtonHandler(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "357CE660-6B0B-4A6A-86CD-2D776AC838F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mouse/gameVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "pressedButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "357CE660-6B0B-4A6A-86CD-2D776AC838F1 - c0a9f6443c5fcbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mouse.gameVC.pressedButton(__C.NSButton) -&gt; ()"
+                  moduleName = "Mouse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Data/KnockMouse/Mouse/Mouse/gameVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "2820">
+               </Location>
+               <Location
+                  uuid = "357CE660-6B0B-4A6A-86CD-2D776AC838F1 - c0a9f6443c5fcda"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mouse.gameVC.pressedButton(__C.NSButton) -&gt; ()"
+                  moduleName = "Mouse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Data/KnockMouse/Mouse/Mouse/gameVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "2912">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C346B3B3-9CF4-4E17-B9D7-36E6CD4984ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mouse/gameVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "pressedButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C346B3B3-9CF4-4E17-B9D7-36E6CD4984ED - c0a9f6443c5e3e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mouse.gameVC.pressedButton(__C.NSButton) -&gt; ()"
+                  moduleName = "Mouse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Data/KnockMouse/Mouse/Mouse/gameVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "2220">
+               </Location>
+               <Location
+                  uuid = "C346B3B3-9CF4-4E17-B9D7-36E6CD4984ED - c0a9f6443c5fc3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mouse.gameVC.pressedButton(__C.NSButton) -&gt; ()"
+                  moduleName = "Mouse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/My%20Data/KnockMouse/Mouse/Mouse/gameVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "2312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

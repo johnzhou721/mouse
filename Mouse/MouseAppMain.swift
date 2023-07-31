@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  MouseAppMain.swift
 //  Mouse
 //
 //  Created by John Zhou on 7/29/23.
@@ -8,7 +8,7 @@
 import Cocoa
 
 @main
-class AppDelegate: NSObject, NSApplicationDelegate {
+class MouseAppMain: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
