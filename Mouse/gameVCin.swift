@@ -12,6 +12,7 @@ class GameVC4 : gameVC {
     @IBOutlet var Button2: NSButton?
     @IBOutlet var Button3: NSButton?
     @IBOutlet var Button4: NSButton?
+    @IBOutlet var debugLabelx: NSTextField?
     override func viewDidLoad()
     {
         buttons.append(nil)
@@ -19,6 +20,8 @@ class GameVC4 : gameVC {
         buttons.append(Button2!)
         buttons.append(Button3!)
         buttons.append(Button4!)
+        debugLabel = debugLabelx
+        debugLabelx?.identifier = NSUserInterfaceItemIdentifier("Scr3")
         super.viewDidLoad()
     }
     @IBAction func ButtonHandler(_ sender: NSButton?)
@@ -32,6 +35,7 @@ class GameVC5 : gameVC {
     @IBOutlet var Button3: NSButton?
     @IBOutlet var Button4: NSButton?
     @IBOutlet var Button5: NSButton?
+    @IBOutlet var debugLabelx: NSTextField?
     override func viewDidLoad()
     {
         buttons.append(nil)
@@ -40,6 +44,7 @@ class GameVC5 : gameVC {
         buttons.append(Button3!)
         buttons.append(Button4!)
         buttons.append(Button5!)
+        debugLabel = debugLabelx
         super.viewDidLoad()
     }
     @IBAction func ButtonHandler(_ sender: NSButton?)
@@ -54,6 +59,7 @@ class GameVC6 : gameVC {
     @IBOutlet var Button4: NSButton?
     @IBOutlet var Button5: NSButton?
     @IBOutlet var Button6: NSButton?
+    @IBOutlet var debugLabelx: NSTextField?
     override func viewDidLoad()
     {
         buttons.append(nil)
@@ -63,6 +69,7 @@ class GameVC6 : gameVC {
         buttons.append(Button4!)
         buttons.append(Button5!)
         buttons.append(Button6!)
+        debugLabel = debugLabelx
         super.viewDidLoad()
     }
     @IBAction func ButtonHandler(_ sender: NSButton?)

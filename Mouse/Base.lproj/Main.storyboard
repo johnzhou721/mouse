@@ -691,34 +691,37 @@
                                 </textFieldCell>
                             </textField>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGs-S8-sRD">
-                                <rect key="frame" x="135" y="140" width="160" height="20"/>
+                                <rect key="frame" x="111" y="140" width="208" height="20"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Faz-3D-D8X">
-                                        <rect key="frame" x="-7" y="-7" width="62" height="32"/>
+                                        <rect key="frame" x="-7" y="-7" width="78" height="32"/>
                                         <buttonCell key="cell" type="push" title="四洞" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bjb-CJ-5NV">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" size="22" name="Helvetica"/>
                                         </buttonCell>
+                                        <accessibility identifier="Button4"/>
                                         <connections>
                                             <segue destination="XfG-lQ-9wD" kind="show" id="GmB-ie-M3w"/>
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="a3K-W5-Bao">
-                                        <rect key="frame" x="49" y="-7" width="62" height="32"/>
+                                        <rect key="frame" x="65" y="-7" width="78" height="32"/>
                                         <buttonCell key="cell" type="push" title="五洞" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eYd-9o-WTI">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" size="22" name="Helvetica"/>
                                         </buttonCell>
+                                        <accessibility identifier="Button5"/>
                                         <connections>
                                             <segue destination="Yop-lg-OaG" kind="show" id="NIn-MI-G2r"/>
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fk0-qc-cRr">
-                                        <rect key="frame" x="105" y="-7" width="62" height="32"/>
+                                        <rect key="frame" x="137" y="-7" width="78" height="32"/>
                                         <buttonCell key="cell" type="push" title="六洞" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V2N-Pb-kAm">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" size="22" name="Helvetica"/>
                                         </buttonCell>
+                                        <accessibility identifier="Button6"/>
                                         <connections>
                                             <segue destination="Ref-f4-Hue" kind="show" id="cBl-eL-98w"/>
                                         </connections>
@@ -778,13 +781,14 @@
         <!--GameVC4-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController id="XfG-lQ-9wD" customClass="GameVC4" customModule="Mouse" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="489" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="766" height="362"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-7x-On4">
-                                <rect key="frame" x="135" y="186" width="220" height="61"/>
+                                <rect key="frame" x="273" y="234" width="220" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="suZ-mj-gDN"/>
                                     <constraint firstAttribute="height" constant="61" id="uDf-iE-j7U"/>
@@ -796,72 +800,88 @@
                                 </textFieldCell>
                             </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="dbt-oC-eFZ">
-                                <rect key="frame" x="56" y="91" width="87" height="87"/>
+                                <rect key="frame" x="48" y="66" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="EYU-9t-Exe"/>
-                                    <constraint firstAttribute="height" constant="87" id="i0d-72-mQA"/>
+                                    <constraint firstAttribute="width" constant="160" id="EYU-9t-Exe"/>
+                                    <constraint firstAttribute="height" constant="160" id="i0d-72-mQA"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number1" imagePosition="only" alignment="center" alternateImage="Number1" imageScaling="proportionallyUpOrDown" inset="2" id="U9i-i8-maV">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button1-4"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="XfG-lQ-9wD" id="dxc-Zn-GNq"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="2CM-28-Pi8">
-                                <rect key="frame" x="153" y="91" width="87" height="87"/>
+                                <rect key="frame" x="218" y="66" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="KFc-cD-z4Q"/>
-                                    <constraint firstAttribute="height" constant="87" id="d9x-rk-bcV"/>
+                                    <constraint firstAttribute="width" constant="160" id="KFc-cD-z4Q"/>
+                                    <constraint firstAttribute="height" constant="160" id="d9x-rk-bcV"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number2" imagePosition="only" alignment="center" alternateImage="Number2" imageScaling="proportionallyUpOrDown" inset="2" id="f0d-IY-2OI">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button2-4"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="XfG-lQ-9wD" id="qKu-5L-evh"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="uPc-2E-MaI">
-                                <rect key="frame" x="347" y="91" width="87" height="87"/>
+                                <rect key="frame" x="558" y="66" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="W3X-TT-Lkq"/>
-                                    <constraint firstAttribute="height" constant="87" id="wvs-OQ-OkJ"/>
+                                    <constraint firstAttribute="width" constant="160" id="W3X-TT-Lkq"/>
+                                    <constraint firstAttribute="height" constant="160" id="wvs-OQ-OkJ"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number4" imagePosition="only" alignment="center" alternateImage="Number4" imageScaling="proportionallyUpOrDown" inset="2" id="1wD-41-G6R">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button4-4"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="XfG-lQ-9wD" id="Vth-xZ-j2X"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="nkY-wr-jMY">
-                                <rect key="frame" x="250" y="91" width="87" height="87"/>
+                                <rect key="frame" x="388" y="66" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="5OD-qA-Amy"/>
-                                    <constraint firstAttribute="width" constant="87" id="bfH-iU-FzZ"/>
+                                    <constraint firstAttribute="height" constant="160" id="5OD-qA-Amy"/>
+                                    <constraint firstAttribute="width" constant="160" id="bfH-iU-FzZ"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number3" imagePosition="only" alignment="center" alternateImage="Number3" imageScaling="proportionallyUpOrDown" inset="2" id="rNG-DU-8sj">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button3-4"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="XfG-lQ-9wD" id="scx-9p-kSP"/>
                                 </connections>
                             </button>
+                            <textField identifier="Scr4" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vrb-oY-52d">
+                                <rect key="frame" x="131" y="257" width="34" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Click" id="xIp-Xc-kYm">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <accessibility identifier="Scr4"/>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="uPc-2E-MaI" firstAttribute="top" secondItem="MUp-7x-On4" secondAttribute="bottom" constant="8" symbolic="YES" id="02q-kp-SP5"/>
                             <constraint firstItem="uPc-2E-MaI" firstAttribute="leading" secondItem="nkY-wr-jMY" secondAttribute="trailing" constant="10" symbolic="YES" id="50x-Nb-9YM"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vrb-oY-52d" secondAttribute="trailing" constant="20" symbolic="YES" id="JXa-44-SP3"/>
                             <constraint firstItem="dbt-oC-eFZ" firstAttribute="top" secondItem="MUp-7x-On4" secondAttribute="bottom" constant="8" symbolic="YES" id="LVV-Sd-NJG"/>
-                            <constraint firstItem="MUp-7x-On4" firstAttribute="leading" secondItem="dbt-oC-eFZ" secondAttribute="trailing" constant="-6" id="PeE-bg-Mpc"/>
+                            <constraint firstAttribute="bottom" secondItem="Vrb-oY-52d" secondAttribute="bottom" constant="257" id="N9L-E2-N16"/>
+                            <constraint firstItem="Vrb-oY-52d" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="133" id="OQR-tE-2To"/>
+                            <constraint firstItem="MUp-7x-On4" firstAttribute="leading" secondItem="dbt-oC-eFZ" secondAttribute="trailing" constant="67" id="PeE-bg-Mpc"/>
                             <constraint firstItem="nkY-wr-jMY" firstAttribute="leading" secondItem="2CM-28-Pi8" secondAttribute="trailing" constant="10" symbolic="YES" id="QHm-es-2fr"/>
                             <constraint firstItem="2CM-28-Pi8" firstAttribute="leading" secondItem="dbt-oC-eFZ" secondAttribute="trailing" constant="10" symbolic="YES" id="URI-Sl-U4z"/>
-                            <constraint firstItem="MUp-7x-On4" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="23" id="Vkp-Vz-rMS"/>
                             <constraint firstItem="nkY-wr-jMY" firstAttribute="top" secondItem="MUp-7x-On4" secondAttribute="bottom" constant="8" symbolic="YES" id="Wf8-eQ-GL9"/>
                             <constraint firstItem="MUp-7x-On4" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="iPg-iz-THV"/>
+                            <constraint firstItem="MUp-7x-On4" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="-83.5" id="m8c-jI-tza"/>
                             <constraint firstItem="2CM-28-Pi8" firstAttribute="top" secondItem="MUp-7x-On4" secondAttribute="bottom" constant="8" symbolic="YES" id="rjJ-ff-Apt"/>
                         </constraints>
                     </view>
@@ -870,22 +890,22 @@
                         <outlet property="Button2" destination="2CM-28-Pi8" id="kPS-BQ-F66"/>
                         <outlet property="Button3" destination="nkY-wr-jMY" id="S39-9J-iQQ"/>
                         <outlet property="Button4" destination="uPc-2E-MaI" id="yJG-AU-xgy"/>
+                        <outlet property="debugLabelx" destination="Vrb-oY-52d" id="1jo-7l-2lQ"/>
                     </connections>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-463.5" y="1230"/>
+            <point key="canvasLocation" x="-776" y="1276"/>
         </scene>
         <!--GameVC5-->
         <scene sceneID="SBw-QM-iLN">
             <objects>
                 <viewController id="Yop-lg-OaG" customClass="GameVC5" customModule="Mouse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="JQS-pQ-UMh">
-                        <rect key="frame" x="0.0" y="0.0" width="560" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="909" height="362"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ao1-NL-rDL">
-                                <rect key="frame" x="170" y="186" width="220" height="61"/>
+                                <rect key="frame" x="345" y="234" width="220" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="0R4-RT-oEu"/>
                                     <constraint firstAttribute="height" constant="61" id="Xfo-Ni-vZt"/>
@@ -897,90 +917,107 @@
                                 </textFieldCell>
                             </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="FA3-4l-1tl">
-                                <rect key="frame" x="43" y="91" width="87" height="87"/>
+                                <rect key="frame" x="35" y="66" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="8pr-77-Rgu"/>
-                                    <constraint firstAttribute="height" constant="87" id="n2y-Ph-4BY"/>
+                                    <constraint firstAttribute="width" constant="160" id="8pr-77-Rgu"/>
+                                    <constraint firstAttribute="height" constant="160" id="n2y-Ph-4BY"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number1" imagePosition="only" alignment="center" alternateImage="Number1" imageScaling="proportionallyUpOrDown" inset="2" id="wim-aw-Rh1">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button1-5"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Yop-lg-OaG" id="Xqa-0Q-394"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Xhz-wX-JsH">
-                                <rect key="frame" x="140" y="91" width="87" height="87"/>
+                                <rect key="frame" x="205" y="66" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="o1G-2W-h8s"/>
-                                    <constraint firstAttribute="width" constant="87" id="tdI-dY-ImI"/>
+                                    <constraint firstAttribute="height" constant="160" id="o1G-2W-h8s"/>
+                                    <constraint firstAttribute="width" constant="160" id="tdI-dY-ImI"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number2" imagePosition="only" alignment="center" alternateImage="Number2" imageScaling="proportionallyUpOrDown" inset="2" id="Vsf-vd-Vhf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <accessibility identifier="Button2-5"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Yop-lg-OaG" id="3tV-4A-0GA"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="9rg-rO-4XV">
-                                <rect key="frame" x="334" y="91" width="87" height="87"/>
+                                <rect key="frame" x="545" y="66" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="VWP-ge-NKt"/>
-                                    <constraint firstAttribute="width" constant="87" id="Y4b-tV-7eO"/>
+                                    <constraint firstAttribute="height" constant="160" id="VWP-ge-NKt"/>
+                                    <constraint firstAttribute="width" constant="160" id="Y4b-tV-7eO"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number4" imagePosition="only" alignment="center" alternateImage="Number4" imageScaling="proportionallyUpOrDown" inset="2" id="QPd-x3-DQy">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button4-5"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Yop-lg-OaG" id="cdS-5B-2GK"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="5Ps-OQ-WZY">
-                                <rect key="frame" x="237" y="91" width="87" height="87"/>
+                                <rect key="frame" x="375" y="66" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="BtB-87-s2p"/>
-                                    <constraint firstAttribute="height" constant="87" id="NgH-dG-sox"/>
+                                    <constraint firstAttribute="width" constant="160" id="BtB-87-s2p"/>
+                                    <constraint firstAttribute="height" constant="160" id="NgH-dG-sox"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number3" imagePosition="only" alignment="center" alternateImage="Number3" imageScaling="proportionallyUpOrDown" inset="2" id="PTu-zz-U8Z">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button3-5"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Yop-lg-OaG" id="Q5y-L3-QpK"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Sc3-yY-2xv">
-                                <rect key="frame" x="431" y="91" width="87" height="87"/>
+                                <rect key="frame" x="715" y="66" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="4Wh-Wl-p7A"/>
-                                    <constraint firstAttribute="height" constant="87" id="SSn-3N-clf"/>
+                                    <constraint firstAttribute="width" constant="160" id="4Wh-Wl-p7A"/>
+                                    <constraint firstAttribute="height" constant="160" id="SSn-3N-clf"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number5" imagePosition="only" alignment="center" alternateImage="Number5" imageScaling="proportionallyUpOrDown" inset="2" id="cjl-L0-iAI">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button5-5"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Yop-lg-OaG" id="LOJ-KC-kLu"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5eM-IR-MCi">
+                                <rect key="frame" x="203" y="257" width="34" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Click" id="Jr3-AQ-wfR">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Xhz-wX-JsH" firstAttribute="top" secondItem="ao1-NL-rDL" secondAttribute="bottom" constant="8" symbolic="YES" id="7NI-8M-LdQ"/>
                             <constraint firstItem="9rg-rO-4XV" firstAttribute="leading" secondItem="5Ps-OQ-WZY" secondAttribute="trailing" constant="10" symbolic="YES" id="DLC-iJ-bAU"/>
                             <constraint firstItem="Sc3-yY-2xv" firstAttribute="top" secondItem="ao1-NL-rDL" secondAttribute="bottom" constant="8" symbolic="YES" id="FWl-1R-fjg"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5eM-IR-MCi" secondAttribute="trailing" constant="20" symbolic="YES" id="LVq-xh-uBA"/>
                             <constraint firstItem="5Ps-OQ-WZY" firstAttribute="leading" secondItem="Xhz-wX-JsH" secondAttribute="trailing" constant="10" symbolic="YES" id="Lxu-dT-E10"/>
+                            <constraint firstAttribute="bottom" secondItem="5eM-IR-MCi" secondAttribute="bottom" constant="257" id="RdO-Je-viE"/>
                             <constraint firstItem="Xhz-wX-JsH" firstAttribute="leading" secondItem="FA3-4l-1tl" secondAttribute="trailing" constant="10" symbolic="YES" id="UQT-fq-gEs"/>
+                            <constraint firstItem="5eM-IR-MCi" firstAttribute="leading" secondItem="JQS-pQ-UMh" secondAttribute="leading" constant="205" id="X8b-n0-SuH"/>
                             <constraint firstItem="Sc3-yY-2xv" firstAttribute="leading" secondItem="9rg-rO-4XV" secondAttribute="trailing" constant="10" symbolic="YES" id="ZMy-3y-tTk"/>
                             <constraint firstItem="ao1-NL-rDL" firstAttribute="centerX" secondItem="JQS-pQ-UMh" secondAttribute="centerX" id="b9l-c5-KTX"/>
-                            <constraint firstItem="ao1-NL-rDL" firstAttribute="top" secondItem="JQS-pQ-UMh" secondAttribute="top" constant="23" id="cA0-bi-tDR"/>
                             <constraint firstItem="5Ps-OQ-WZY" firstAttribute="top" secondItem="ao1-NL-rDL" secondAttribute="bottom" constant="8" symbolic="YES" id="esn-iY-6vS"/>
                             <constraint firstItem="FA3-4l-1tl" firstAttribute="top" secondItem="ao1-NL-rDL" secondAttribute="bottom" constant="8" symbolic="YES" id="jdY-uv-YIj"/>
                             <constraint firstItem="9rg-rO-4XV" firstAttribute="top" secondItem="ao1-NL-rDL" secondAttribute="bottom" constant="8" symbolic="YES" id="kkM-GD-Jm6"/>
-                            <constraint firstItem="ao1-NL-rDL" firstAttribute="leading" secondItem="FA3-4l-1tl" secondAttribute="trailing" constant="42" id="pVZ-xL-cVq"/>
+                            <constraint firstItem="ao1-NL-rDL" firstAttribute="centerY" secondItem="JQS-pQ-UMh" secondAttribute="centerY" constant="-83.5" id="mNp-7G-okP"/>
+                            <constraint firstItem="ao1-NL-rDL" firstAttribute="leading" secondItem="FA3-4l-1tl" secondAttribute="trailing" constant="152" id="pVZ-xL-cVq"/>
                         </constraints>
+                        <accessibility identifier="Scr5"/>
                     </view>
                     <connections>
                         <outlet property="Button1" destination="FA3-4l-1tl" id="0Pv-Sn-kWB"/>
@@ -988,22 +1025,23 @@
                         <outlet property="Button3" destination="5Ps-OQ-WZY" id="ajH-16-bDE"/>
                         <outlet property="Button4" destination="9rg-rO-4XV" id="hQZ-lb-O4V"/>
                         <outlet property="Button5" destination="Sc3-yY-2xv" id="kW6-n9-AKr"/>
+                        <outlet property="debugLabelx" destination="5eM-IR-MCi" id="ipM-nX-oWe"/>
                     </connections>
                 </viewController>
                 <customObject id="4Fy-W2-Z3n" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="1230"/>
+            <point key="canvasLocation" x="66.5" y="1276"/>
         </scene>
         <!--GameVC6-->
         <scene sceneID="NB3-8O-vz3">
             <objects>
                 <viewController id="Ref-f4-Hue" customClass="GameVC6" customModule="Mouse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="i55-WZ-M68">
-                        <rect key="frame" x="0.0" y="0.0" width="721" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1116" height="362"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iVb-u1-Rvq">
-                                <rect key="frame" x="251" y="186" width="220" height="61"/>
+                                <rect key="frame" x="448" y="235" width="220" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="EuW-NT-UXl"/>
                                     <constraint firstAttribute="width" constant="216" id="NRE-Qi-QiI"/>
@@ -1015,105 +1053,123 @@
                                 </textFieldCell>
                             </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="tEZ-Ao-Q8N">
-                                <rect key="frame" x="74" y="91" width="87" height="87"/>
+                                <rect key="frame" x="53" y="67" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="J8z-IY-cYG"/>
-                                    <constraint firstAttribute="height" constant="87" id="Qsl-rr-PEV"/>
+                                    <constraint firstAttribute="width" constant="160" id="J8z-IY-cYG"/>
+                                    <constraint firstAttribute="height" constant="160" id="Qsl-rr-PEV"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number1" imagePosition="only" alignment="center" alternateImage="Number1" imageScaling="proportionallyUpOrDown" inset="2" id="KyX-HQ-VWx">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button1-6"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Ref-f4-Hue" id="fnq-DM-4RQ"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Nlg-TR-EfM">
-                                <rect key="frame" x="171" y="91" width="87" height="87"/>
+                                <rect key="frame" x="223" y="67" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="Pwk-7P-ygE"/>
-                                    <constraint firstAttribute="height" constant="87" id="jIY-UH-ksY"/>
+                                    <constraint firstAttribute="width" constant="160" id="Pwk-7P-ygE"/>
+                                    <constraint firstAttribute="height" constant="160" id="jIY-UH-ksY"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number2" imagePosition="only" alignment="center" alternateImage="Number2" imageScaling="proportionallyUpOrDown" inset="2" id="PGJ-FQ-AgH">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button2-6"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Ref-f4-Hue" id="E6J-NK-vFT"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="nKz-kg-oZa">
-                                <rect key="frame" x="365" y="91" width="87" height="87"/>
+                                <rect key="frame" x="563" y="67" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="HQy-pJ-9gy"/>
-                                    <constraint firstAttribute="height" constant="87" id="k1v-uo-EGq"/>
+                                    <constraint firstAttribute="width" constant="160" id="HQy-pJ-9gy"/>
+                                    <constraint firstAttribute="height" constant="160" id="k1v-uo-EGq"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number4" imagePosition="only" alignment="center" alternateImage="Number4" imageScaling="proportionallyUpOrDown" inset="2" id="TDn-hZ-zwY">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button4-6"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Ref-f4-Hue" id="Odg-tf-CNP"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="m0f-d8-e0t">
-                                <rect key="frame" x="268" y="91" width="87" height="87"/>
+                                <rect key="frame" x="393" y="67" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="aIi-rT-EWo"/>
-                                    <constraint firstAttribute="height" constant="87" id="ohY-GM-4X0"/>
+                                    <constraint firstAttribute="width" constant="160" id="aIi-rT-EWo"/>
+                                    <constraint firstAttribute="height" constant="160" id="ohY-GM-4X0"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number3" imagePosition="only" alignment="center" alternateImage="Number3" imageScaling="proportionallyUpOrDown" inset="2" id="5Xb-od-NPG">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button3-6"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Ref-f4-Hue" id="6uN-qH-Qjy"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="3nA-sr-HqH">
-                                <rect key="frame" x="462" y="91" width="87" height="87"/>
+                                <rect key="frame" x="733" y="67" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="V2r-b8-7EU"/>
-                                    <constraint firstAttribute="height" constant="87" id="qcd-bN-JEj"/>
+                                    <constraint firstAttribute="width" constant="160" id="V2r-b8-7EU"/>
+                                    <constraint firstAttribute="height" constant="160" id="qcd-bN-JEj"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number5" imagePosition="only" alignment="center" alternateImage="Number5" imageScaling="proportionallyUpOrDown" inset="2" id="M9X-z0-hyU">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button5-6"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Ref-f4-Hue" id="Zwf-ar-McP"/>
                                 </connections>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="YnX-A5-56c">
-                                <rect key="frame" x="559" y="91" width="87" height="87"/>
+                                <rect key="frame" x="903" y="67" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="J51-Br-fem"/>
-                                    <constraint firstAttribute="width" constant="87" id="pDl-CY-uZd"/>
+                                    <constraint firstAttribute="height" constant="160" id="J51-Br-fem"/>
+                                    <constraint firstAttribute="width" constant="160" id="pDl-CY-uZd"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Number2" imagePosition="only" alignment="center" alternateImage="Number2" imageScaling="proportionallyUpOrDown" inset="2" id="i1o-5T-jko">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <accessibility identifier="Button6-6"/>
                                 <connections>
                                     <action selector="ButtonHandler:" target="Ref-f4-Hue" id="bIr-Du-pqd"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GYC-AL-C2b">
+                                <rect key="frame" x="351" y="258" width="34" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Click" id="M2v-Jf-8M1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <accessibility identifier="Scr6"/>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Nlg-TR-EfM" firstAttribute="leading" secondItem="tEZ-Ao-Q8N" secondAttribute="trailing" constant="10" symbolic="YES" id="Dya-r1-1Rv"/>
                             <constraint firstItem="YnX-A5-56c" firstAttribute="top" secondItem="iVb-u1-Rvq" secondAttribute="bottom" constant="8" symbolic="YES" id="JUk-hk-W4Y"/>
-                            <constraint firstItem="iVb-u1-Rvq" firstAttribute="leading" secondItem="tEZ-Ao-Q8N" secondAttribute="trailing" constant="92" id="JiY-RF-Cl7"/>
+                            <constraint firstItem="iVb-u1-Rvq" firstAttribute="leading" secondItem="tEZ-Ao-Q8N" secondAttribute="trailing" constant="237" id="JiY-RF-Cl7"/>
                             <constraint firstItem="nKz-kg-oZa" firstAttribute="top" secondItem="iVb-u1-Rvq" secondAttribute="bottom" constant="8" symbolic="YES" id="Q6U-e0-9yb"/>
                             <constraint firstItem="3nA-sr-HqH" firstAttribute="top" secondItem="iVb-u1-Rvq" secondAttribute="bottom" constant="8" symbolic="YES" id="RVT-XQ-fqH"/>
                             <constraint firstItem="Nlg-TR-EfM" firstAttribute="top" secondItem="iVb-u1-Rvq" secondAttribute="bottom" constant="8" symbolic="YES" id="Vws-mr-1sG"/>
                             <constraint firstItem="3nA-sr-HqH" firstAttribute="leading" secondItem="nKz-kg-oZa" secondAttribute="trailing" constant="10" symbolic="YES" id="Vyo-wC-Tl2"/>
-                            <constraint firstItem="iVb-u1-Rvq" firstAttribute="top" secondItem="i55-WZ-M68" secondAttribute="top" constant="23" id="cyB-XP-Ipa"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GYC-AL-C2b" secondAttribute="trailing" constant="20" symbolic="YES" id="Vz7-Tq-B1u"/>
+                            <constraint firstItem="iVb-u1-Rvq" firstAttribute="centerY" secondItem="i55-WZ-M68" secondAttribute="centerY" constant="-84" id="cj2-YU-HoB"/>
                             <constraint firstItem="m0f-d8-e0t" firstAttribute="leading" secondItem="Nlg-TR-EfM" secondAttribute="trailing" constant="10" symbolic="YES" id="eld-Ki-IJ1"/>
                             <constraint firstItem="nKz-kg-oZa" firstAttribute="leading" secondItem="m0f-d8-e0t" secondAttribute="trailing" constant="10" symbolic="YES" id="mpx-rJ-8GM"/>
                             <constraint firstItem="tEZ-Ao-Q8N" firstAttribute="top" secondItem="iVb-u1-Rvq" secondAttribute="bottom" constant="8" symbolic="YES" id="n7x-32-nHk"/>
                             <constraint firstItem="iVb-u1-Rvq" firstAttribute="centerX" secondItem="i55-WZ-M68" secondAttribute="centerX" id="nQ0-X0-meY"/>
+                            <constraint firstAttribute="bottom" secondItem="GYC-AL-C2b" secondAttribute="bottom" constant="258" id="oqb-0I-oLt"/>
                             <constraint firstItem="YnX-A5-56c" firstAttribute="leading" secondItem="3nA-sr-HqH" secondAttribute="trailing" constant="10" id="snB-vY-Wyn"/>
                             <constraint firstItem="m0f-d8-e0t" firstAttribute="top" secondItem="iVb-u1-Rvq" secondAttribute="bottom" constant="8" symbolic="YES" id="uJR-Wd-I5U"/>
+                            <constraint firstItem="GYC-AL-C2b" firstAttribute="leading" secondItem="i55-WZ-M68" secondAttribute="leading" constant="353" id="wAT-so-hBA"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1123,11 +1179,12 @@
                         <outlet property="Button4" destination="nKz-kg-oZa" id="ENI-x2-GuN"/>
                         <outlet property="Button5" destination="3nA-sr-HqH" id="we9-1q-Xfb"/>
                         <outlet property="Button6" destination="YnX-A5-56c" id="rHJ-w8-VCe"/>
+                        <outlet property="debugLabelx" destination="GYC-AL-C2b" id="ejp-tv-67d"/>
                     </connections>
                 </viewController>
                 <customObject id="izm-Vt-H5F" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="731" y="1230"/>
+            <point key="canvasLocation" x="1115" y="1276"/>
         </scene>
     </scenes>
     <resources>

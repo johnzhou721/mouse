@@ -19,6 +19,8 @@ class gameVC : NSViewController {
     var currentNum : Int = 0                   // Default
     var score : Int = 0                        // Default
     var gameNum : Int = 0                      // Default
+    var debugLabel : NSTextField? = nil        // Subclass
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +36,8 @@ class gameVC : NSViewController {
         currentNum = 0
         
         if gameNum == 20 {
-            showAlert(title: "Game finished", message: "Score: \(score)", style: .informational)
+            debugLabel?.stringValue = "\(score)"
+            showAlert(title: "Game finished for All", message: "Score: \(score)", style: .informational)
             exit(0)
         }
         sequence = []
@@ -67,7 +70,16 @@ class gameVC : NSViewController {
             if currentNum >= sequence.count
             {
                 score += 1
+                debugLabel?.stringValue = "Score +1";
             }
+            else
+            {
+                debugLabel?.stringValue = "Score +0";
+            }
+        }
+        else
+        {
+            debugLabel?.stringValue = "Incorrect";
         }
         q.enqueue(sequence[currentNum % sequence.count])
         let queue = DispatchQueue.main
