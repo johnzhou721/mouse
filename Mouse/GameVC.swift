@@ -8,6 +8,10 @@
 import Cocoa
 import Dispatch
 var q = QueueWrapper()
+var globalGameNum :Int = -1
+var globalScore :Int = -1
+var globalCycleLength : [Int] = []
+var random : Bool = false
 class gameVC : NSViewController {
     // 5 + 6 + 7 + 7, 5 Rounds, 20 Games, Permutation, 500 pts.
     var cycleLength : [Int] = [5, 5, 5, 5, 5,
@@ -20,14 +24,28 @@ class gameVC : NSViewController {
     var score : Int = 0                        // Default
     var gameNum : Int = 0                      // Default
     var debugLabel : NSTextField? = nil        // Subclass
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if (globalGameNum != -1)
+        {
+            gameNum = globalGameNum
+        }
+        if (globalScore != -1)
+        {
+            score = globalScore
+        }
         // Do any additional setup after loading the view.
-        cycleLength.shuffle()  // Shuffle the cycle length
-        for _ in 1..<cycleLength[gameNum]+1 {
-            sequence.append(Int.random(in: 1..<buttons.count))
+        if (globalCycleLength == [])
+        {
+            cycleLength.shuffle()  // Shuffle the cycle length
+            for _ in 1..<cycleLength[gameNum]+1 {
+                sequence.append(Int.random(in: 1..<buttons.count))
+            }
+            globalCycleLength = Array(cycleLength)
+        }
+        else
+        {
+            cycleLength = Array(globalCycleLength)
         }
     }
     func resetGame()
@@ -45,7 +63,26 @@ class gameVC : NSViewController {
             sequence.append(Int.random(in: 1..<buttons.count))
         }
         showAlert(title: "Game finished", message: "Game is done. Click OK for next game.", style: .informational)
-        
+        globalScore = score
+        globalGameNum = gameNum
+        if (random)
+        {
+            let windowController = self.view.window?.windowController
+            let a = [GameVC4.self, GameVC5.self, GameVC6.self]
+            // Create a new window
+            let newWindow = NSWindow(contentViewController: (a.randomElement()!).init())
+                    
+            // Set window properties (optional)
+            newWindow.title = "New Window"
+            newWindow.styleMask = [.titled, .closable, .resizable, .fullSizeContentView]
+            newWindow.isReleasedWhenClosed = false // Keep window in memory even when closed
+
+            // Show the new window
+            newWindow.makeKeyAndOrderFront(self)
+            
+            // Close the current window (optional)
+            self.view.window?.close()
+        }
     }
     func pressedButton(_ sender: NSButton)
     {

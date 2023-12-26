@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -679,10 +678,10 @@
             <objects>
                 <viewController id="HEi-mF-oeA" customClass="SelectVC" customModule="Mouse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="v91-wu-W5n">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="432" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Igf-K3-Efe">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Igf-K3-Efe">
                                 <rect key="frame" x="172" y="256" width="86" height="24"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="选择模式" id="s9o-Km-Oh2">
                                     <font key="font" metaFont="system" size="20"/>
@@ -738,12 +737,24 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-34-nwx">
+                                <rect key="frame" x="154" y="93" width="125" height="32"/>
+                                <buttonCell key="cell" type="push" title="Random - Beta" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4Q8-1R-pOK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ran" target="HEi-mF-oeA" id="Z5r-xh-ydv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Igf-K3-Efe" secondAttribute="trailing" constant="20" symbolic="YES" id="4zV-Y8-lup"/>
                             <constraint firstItem="Igf-K3-Efe" firstAttribute="leading" secondItem="v91-wu-W5n" secondAttribute="leading" constant="174" id="9fc-Ol-JJW"/>
+                            <constraint firstItem="NNg-34-nwx" firstAttribute="centerX" secondItem="v91-wu-W5n" secondAttribute="centerX" id="FOH-2d-3S3"/>
                             <constraint firstItem="Igf-K3-Efe" firstAttribute="top" secondItem="v91-wu-W5n" secondAttribute="top" constant="20" symbolic="YES" id="Lq9-dk-edV"/>
                             <constraint firstItem="dGs-S8-sRD" firstAttribute="centerX" secondItem="Igf-K3-Efe" secondAttribute="centerX" id="cVd-uj-JEq"/>
+                            <constraint firstItem="NNg-34-nwx" firstAttribute="top" secondItem="a3K-W5-Bao" secondAttribute="bottom" constant="20" id="mHC-x6-bfw"/>
                             <constraint firstItem="a3K-W5-Bao" firstAttribute="centerY" secondItem="v91-wu-W5n" secondAttribute="centerY" id="tsd-Gk-rLt"/>
                         </constraints>
                     </view>
@@ -755,7 +766,7 @@
                 </viewController>
                 <customObject id="ghj-Pk-vC9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="740"/>
+            <point key="canvasLocation" x="66" y="740"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -782,12 +793,12 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="XfG-lQ-9wD" customClass="GameVC4" customModule="Mouse" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameVC4" id="XfG-lQ-9wD" customClass="GameVC4" customModule="Mouse" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="766" height="362"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-7x-On4">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-7x-On4">
                                 <rect key="frame" x="273" y="234" width="220" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="suZ-mj-gDN"/>
@@ -886,12 +897,12 @@
         <!--GameVC5-->
         <scene sceneID="SBw-QM-iLN">
             <objects>
-                <viewController id="Yop-lg-OaG" customClass="GameVC5" customModule="Mouse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameVC5" id="Yop-lg-OaG" customClass="GameVC5" customModule="Mouse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="JQS-pQ-UMh">
                         <rect key="frame" x="0.0" y="0.0" width="909" height="362"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ao1-NL-rDL">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ao1-NL-rDL">
                                 <rect key="frame" x="345" y="234" width="220" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="0R4-RT-oEu"/>
@@ -1005,17 +1016,17 @@
                 </viewController>
                 <customObject id="4Fy-W2-Z3n" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66.5" y="1276"/>
+            <point key="canvasLocation" x="83" y="1284"/>
         </scene>
         <!--GameVC6-->
         <scene sceneID="NB3-8O-vz3">
             <objects>
-                <viewController id="Ref-f4-Hue" customClass="GameVC6" customModule="Mouse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameVC6" id="Ref-f4-Hue" customClass="GameVC6" customModule="Mouse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="i55-WZ-M68">
                         <rect key="frame" x="0.0" y="0.0" width="1116" height="362"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iVb-u1-Rvq">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iVb-u1-Rvq">
                                 <rect key="frame" x="448" y="235" width="220" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="EuW-NT-UXl"/>
