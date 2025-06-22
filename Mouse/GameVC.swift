@@ -26,14 +26,6 @@ class gameVC : NSViewController {
     var debugLabel : NSTextField? = nil        // Subclass
     override func viewDidLoad() {
         super.viewDidLoad()
-        if (globalGameNum != -1)
-        {
-            gameNum = globalGameNum
-        }
-        if (globalScore != -1)
-        {
-            score = globalScore
-        }
         // Do any additional setup after loading the view.
         if (globalCycleLength == [])
         {
@@ -45,7 +37,12 @@ class gameVC : NSViewController {
         }
         else
         {
+            score = globalScore
+            gameNum = globalGameNum
             cycleLength = Array(globalCycleLength)
+            for _ in 1..<cycleLength[gameNum]+1 {
+                sequence.append(Int.random(in: 1..<buttons.count))
+            }
         }
     }
     func resetGame()
@@ -56,7 +53,7 @@ class gameVC : NSViewController {
         if gameNum == 20 {
             debugLabel?.stringValue = "\(score)"
             showAlert(title: "Game finished for All", message: "Score: \(score)", style: .informational)
-            exit(0)
+            NSApp.terminate(nil)
         }
         sequence = []
         for _ in 1..<cycleLength[gameNum]+1 {
@@ -67,13 +64,12 @@ class gameVC : NSViewController {
         globalGameNum = gameNum
         if (random)
         {
-            let windowController = self.view.window?.windowController
-            let a = [GameVC4.self, GameVC5.self, GameVC6.self]
+            let a = [storyboard!.instantiateController(withIdentifier: "GameVC4") as! NSViewController, storyboard!.instantiateController(withIdentifier: "GameVC5") as! NSViewController, storyboard!.instantiateController(withIdentifier: "GameVC6") as! NSViewController]
             // Create a new window
-            let newWindow = NSWindow(contentViewController: (a.randomElement()!).init())
+            let newWindow = NSWindow(contentViewController: a.randomElement()!)
                     
             // Set window properties (optional)
-            newWindow.title = "New Window"
+            newWindow.title = "Game In Progress"
             newWindow.styleMask = [.titled, .closable, .resizable, .fullSizeContentView]
             newWindow.isReleasedWhenClosed = false // Keep window in memory even when closed
 
