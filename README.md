@@ -15,4 +15,8 @@ I sincerely apologize for this oversight. While the potential impact of this inf
 
 If the copyright holder wishes to pursue any action, I will cooperate accordingly.
 
+## (New) Image Credits
+
+https://pixabay.com/vectors/mouse-pet-rodent-4756298/
+
 John
